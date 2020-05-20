@@ -1251,4 +1251,6 @@ ifneq ($(P404_BUILD),)
 $(eval include device/404/sepolicy/common/sepolicy.mk)
 endif
 
+include vendor/404/build/core/config.mk
+
 include $(BUILD_SYSTEM)/dumpvar.mk
