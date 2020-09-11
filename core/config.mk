@@ -1248,7 +1248,7 @@ DEFAULT_DATA_OUT_MODULES := ltp $(ltp_packages) $(kselftest_modules)
 ifneq ($(P404_BUILD),)
 ## We need to be sure the global selinux policies are included
 ## last, to avoid accidental resetting by device configs
-$(eval include device/404/sepolicy/common/sepolicy.mk)
+#$(eval include device/404/sepolicy/common/sepolicy.mk)
 endif
 
 include vendor/404/build/core/config.mk
